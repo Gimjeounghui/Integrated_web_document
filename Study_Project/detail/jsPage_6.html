@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/64a5181ca4.js" crossorigin="anonymous"></script>
+    <script src="../js/jquery-3.6.2.min.js"></script>
+    <script type="text/javascript" src="../js/subList.js"></script>
+
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../dist/css/dashboard.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/subList.css" />
+    <style>
+      .container {
+        width: 1300px;
+      }
+      .top_nav_margin {
+        margin-left: 120px;
+      }
+      .sidebar_right {
+        position: fixed;
+        top: 100px;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      .sidebar_right > ul > li > a {
+        border-left: 2px solid #cdcdcd;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav top_nav_margin navbar-nav">
+            <li id="ml1"><a href="#">Ours</a></li>
+            <li id="ml2"><a href="#Front-End">Front-End</a></li>
+            <li id="ml3"><a href="#Back-End">Back-End</a></li>
+            <li id="ml4"><a href="#Coding-Test">Coding-Test</a></li>
+            <li id="ml5"><a href="#Service">Service</a></li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                >Dropdown <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <form class="navbar-form navbar-right">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search..."
+                />
+              </form>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                ><i class="fa-regular fa-user"></i
+              ></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Log-In</a></li>
+                <li><a href="#">Sign-In</a></li>
+                <li><a href="#">Log-Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- 하위 메뉴 -->
+    <div>
+      <div id="sub_menu1" class="sub_list">
+        <ul class="nav">
+          <li><a href="#">사이트소개</a></li>
+          <li><a href="#">관리자소개</a></li>
+          <li><a href="#">히스토리</a></li>
+        </ul>
+      </div>
+      <div id="sub_menu2" class="sub_list">
+        <ul class="nav">
+          <li><a href="">HTML5</a></li>
+          <li><a href="">CSS3</a></li>
+          <li><a href="">JavaScript</a></li>
+          <li><a href="">jQuery</a></li>
+          <li><a href="">JSP</a></li>
+          <li><a href="">AJAX</a></li>
+        </ul>
+      </div>
+      <div id="sub_menu3" class="sub_list">
+        <ul class="nav">
+          <li><a href="">Java</a></li>
+          <li><a href="">DataBase</a></li>
+          <li><a href="">미정(모델링)</a></li>
+          <li><a href="">Spring</a></li>
+        </ul>
+      </div>
+      <div id="sub_menu4" class="sub_list">
+        <ul class="nav">
+          <li><a href="">Coding-Test</a></li>
+          <li><a href="">미정(사용방법)</a></li>
+        </ul>
+      </div>
+      <div id="sub_menu5" class="sub_list">
+        <ul class="nav">
+          <li><a href="">커뮤니티</a></li>
+          <li><a href="">공지사항</a></li>
+          <li><a href="">시험일정</a></li>
+          <li><a href="">문의하기</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 본문 -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <h3>JavaScript</h3>
+          <ul class="nav nav-sidebar">
+            <li><a href="#">JS란</a></li>
+            <li><a href="#">JS 요소</a></li>
+            <li><a href="#">JS 이벤트</a></li>
+            <li><a href="">내장객체 및 관련함수</a></li>
+            <li><a href="">객체</a></li>
+            <li><a href="">DOM</a></li>
+            <li class="active"><a href="">JS 함수</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 main">
+          <h1 class="page-header">함수</h1>
+          <div>
+            <br>
+            <h2>1. 함수란</h2>
+            <br>
+            <p>
+                함수는 Javascript에서 기본적인 구성 블록 중의 하나이다.<br>
+                함수는 작업을 수행하거나 값을 계산하는 문장 집합 같은 JS 절차이다.<br>
+                함수를 사용하려면 함수를 호출하고자 하는 범위 내에서 함수를 정의해야만 한다.
+            </p>
+            
+            <h2>2. 선언</h2>
+            <p>
+                함수의 이름<br>
+                괄호 안에서 쉼표로 분리된 함수의 매개변수 목록<br>
+                중괄호{ } 안에서 함수를 정의하는 자바스크립트 표현
+            </p>
+            <br>
+
+            <h2>3. 호출</h2>
+            <p>
+                함수를 정의하는 것은 함수를 실행하는 것이 아니다.<br>
+                함수를 정의하는 것은 간단히 함수의 이름을 지어주고, 
+                함수가 호출될 때 무엇을 할지 지정해주는 것이다.<br>
+                함수를 호출하는 것은 나타나있는 매개변수를 가지고 지정된 
+                행위를 수행하는 것이다.<br>
+                <br>
+
+                <pre>
+                    function 함수명(매개변수){  // 함수 선언
+
+                        // 함수 정의
+                
+                    }
+                
+                    함수명();  // 함수 호출
+                </pre>
+            </p>
+            <br>
+
+            <h2>4. 함수의 종류</h2>
+            <br>
+
+            <h3>익명 함수</h3>
+            <p>
+                이름이 없는 함수이기에 필요할 때 호출하는 것이 불가능하고, 
+                이벤트 핸들러와 같이 바로 동작하는 함수가 필요한 경우 
+                또는 변수, 매개변수에 함수를 저장해야 하는 경우 사용<br>
+
+                <pre>
+                    function(매개변수){ // 함수 선언
+                        // 함수 정의
+                    }
+                </pre>
+            </p>
+            <br>
+
+            <h3>즉시 실행 함수</h3>
+            <p>익명 함수의 한 종류로 함수가 정의되자마자 바로 실행되는 함수</p>
+            <br>
+            <p>
+                <strong>즉시 실행 함수를 사용하는 이유</strong><br>
+                &nbsp;&nbsp; 함수의 선언, 정의, 호출의 일련의 과정을 수행하지 않아도 바로 실행된다.<br>
+                <br>
+
+                &nbsp;&nbsp; 사용하려는 변수명이 전역변수로 사용되어지고 있는 경우 즉시 실행 함수를 이용하여 내부의 지역 변수로 작성하여
+                변수명 충돌 문제를 해결할 수 있다.<br>
+                <pre>
+                    (function(매개변수){
+                        // 함수 정의
+                    })();
+                </pre>
+            </p>
+            <br>
+
+            <h3>화살표 함수</h3>
+            <p>익명 함수의 표현식을 간단히 표현한 표기법</p>
+            <br>
+            <p>
+                1. 작성방법 1<br>
+                <br>
+                &nbsp;&nbsp; 기본 형태 ([매개변수]) =&gt; {함수 정의}<br>
+                <pre>
+                    익명 함수   : function(){ }
+                    화살표 함수 : () => { }
+
+                    익명 함수   : function(num){ return num * 2; }
+                    화살표 함수 : (num) => { return num * 2; }
+                </pre>
+                <br>
+
+                2. 작성방법 2<br>
+                <br>
+                &nbsp;&nbsp; 매개변수가 "하나"인 경우 () 생략 가능<br>
+                &nbsp;&nbsp; 매개변수가 없을 경우 무조건 () 작성해야 한다.<br>
+                <pre>
+                    익명 함수   : function(e) { e.target.style.backgroundColor = "yellow"; }
+                    화살표 함수 : e => { e.target.style.backgroundColor = "yellow"; }
+                </pre>
+                <br>
+
+                3. 작성방법 3<br>
+                <br>
+                &nbsp;&nbsp; 함수 정의 부분이 return [ 식 또는 값 ]으로만 작성되어 있는 경우 {}, return  생략 가능<br>
+                &nbsp;&nbsp; return 되는 값이 객체(object)인 경우 {}, return 생략 불가능하다.<br>
+                <pre>
+                    // 함수 호출(익명 함수)
+                      function(num){ return num * 10 };
+                    // 함수 호출(화살표 함수)
+                      num => num * 10;
+                </pre>
+                <br>
+
+                4. 화살표 함수 주의 사항<br>
+                <br>
+                &nbsp;&nbsp; 화살표 함수에서는 this 사용이 불가능하다.<br>
+                &nbsp;&nbsp; 화살표 함수에서 this는 창 자체를 나타내는 객체(window)를 의미한다.
+            </p>
+          </div>
+
+        </div>
+        <div class="col-sm-3 col-md-2 sidebar_right">
+          <ul class="nav nav-sidebar">
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="viewPage_footer">
+      <div class="ft_wrap">
+        <div class="footer_first">
+            <a href="">이용약관</a>
+            <span>|</span>
+            <a href=""><strong>개인정보처리방침</strong></a>
+            <span>|</span>
+            <a href="">제휴신청</a>
+            <span>|</span>
+            <a href="">개발자포럼</a>
+            <span>|</span>
+            <a href="">개발자채용</a>
+        </div>
+        <div class="footer_second">
+            <div><a href="http://www.naver.com">NAVER</a></div>
+            <span>
+                Copyright © 
+                <a href="http://www.naver.com"><strong>NAVER Corp.</strong></a>
+                All Rights Reserved.
+            </span>
+        </div>
+      </div>
+  </footer>
+
+    <script src="../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

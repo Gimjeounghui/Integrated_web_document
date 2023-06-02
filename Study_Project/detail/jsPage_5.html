@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/64a5181ca4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/jquery-3.6.2.min.js"></script>
+    <script type="text/javascript" src="../js/subList.js"></script>
+
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../dist/css/dashboard.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/subList.css" />
+    <style>
+      .container {
+        width: 1300px;
+      }
+      .top_nav_margin {
+        margin-left: 120px;
+      }
+      .sidebar_right {
+        position: fixed;
+        top: 100px;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      .sidebar_right > ul > li > a {
+        border-left: 2px solid #cdcdcd;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav top_nav_margin navbar-nav">
+            <li id="ml1"><a href="#">Ours</a></li>
+            <li id="ml2"><a href="#Front-End">Front-End</a></li>
+            <li id="ml3"><a href="#Back-End">Back-End</a></li>
+            <li id="ml4"><a href="#Coding-Test">Coding-Test</a></li>
+            <li id="ml5"><a href="#Service">Service</a></li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                >Dropdown <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <form class="navbar-form navbar-right">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search..."
+                />
+              </form>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                ><i class="fa-regular fa-user"></i
+              ></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Log-In</a></li>
+                <li><a href="#">Sign-In</a></li>
+                <li><a href="#">Log-Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- 하위 메뉴 -->
+    <div>
+      <div id="sub_menu1" class="sub_list">
+        <ul class="nav">
+          <li><a href="#">사이트소개</a></li>
+          <li><a href="#">관리자소개</a></li>
+          <li><a href="#">히스토리</a></li>
+        </ul>
+      </div>
+      <div id="sub_menu2" class="sub_list">
+        <ul class="nav">
+          <li><a href="">HTML5</a></li>
+          <li><a href="">CSS3</a></li>
+          <li><a href="">JavaScript</a></li>
+          <li><a href="">jQuery</a></li>
+          <li><a href="">JSP</a></li>
+          <li><a href="">AJAX</a></li>
+        </ul>
+      </div>
+      <div id="sub_menu3" class="sub_list">
+        <ul class="nav">
+          <li><a href="">Java</a></li>
+          <li><a href="">DataBase</a></li>
+          <li><a href="">미정(모델링)</a></li>
+          <li><a href="">Spring</a></li>
+        </ul>
+      </div>
+      <div id="sub_menu4" class="sub_list">
+        <ul class="nav">
+          <li><a href="">Coding-Test</a></li>
+          <li><a href="">미정(사용방법)</a></li>
+        </ul>
+      </div>
+      <div id="sub_menu5" class="sub_list">
+        <ul class="nav">
+          <li><a href="">커뮤니티</a></li>
+          <li><a href="">공지사항</a></li>
+          <li><a href="">시험일정</a></li>
+          <li><a href="">문의하기</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 본문 -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <h3>JavaScript</h3>
+          <ul class="nav nav-sidebar">
+            <li><a href="#">JS란</a></li>
+            <li><a href="#">JS 요소</a></li>
+            <li><a href="#">JS 이벤트</a></li>
+            <li><a href="">내장객체 및 관련함수</a></li>
+            <li><a href="">객체</a></li>
+            <li class="active"><a href="">DOM</a></li>
+            <li><a href="">JS 함수</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 main">
+          <h1 class="page-header">DOM</h1>
+          <div>
+            <br />
+
+            <h2>1. DOM이란</h2>
+            <p>
+              HTML 문서를 객체 기반으로 표현한 것으로 HTML 문서에 작성된 내용을
+              TREE 구조로 나타냈을 때 각 TAG, TEXT, COMMENT 등을 Node라고
+              부른다.
+            </p>
+            <br />
+            <img
+              src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f8bb906d-5522-4ccc-b811-fdce748d3a34/DOM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230208%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230208T054933Z&X-Amz-Expires=86400&X-Amz-Signature=8512ddec9bb9c282a002e9dd4fd54ece5f4197b5508cf6729d1ef0e4d59b5b0d&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22DOM.png%22&x-id=GetObject"/>
+            <br />
+
+            <h2>2. Node와 Element</h2>
+            <br />
+
+            <h3>Node</h3>
+            <p>TAG(요소 노드), 속성, 주석, 내용(TEXT 노드) 등 모두 표현</p>
+            <br />
+
+            <h3>Node 탐색 방법</h3>
+            <br />
+            <p>
+              1. 부모 노드 탐색<br />
+              &nbsp;&nbsp; .parentNode<br />
+              <br />
+
+              2. 새로운 노드 추가<br />
+              &nbsp;&nbsp; .append()<br />
+              <br />
+
+              3. 첫 번째 자식 노드 탐색<br />
+              &nbsp;&nbsp; .firstChild<br />
+              <br />
+
+              4. 마지막 자식 노드 탐색<br />
+              &nbsp;&nbsp; .lastChild<br />
+              <br />
+
+              5. 중간에 존재하는 자식 노드 탐색 부모 요소들을<br />
+              &nbsp;&nbsp; .childNodes[인덱스]
+              <br />
+
+              6. 이전 형제 노드 탐색<br />
+              &nbsp;&nbsp; .previousSibling
+              <br />
+
+              7. 다음 형제 노드 탐색<br />
+              &nbsp;&nbsp; .nextSibling
+            </p>
+            <br />
+
+            <h3>Element</h3>
+            <p>Node의 하위 개념으로 요소 노드(TAG) 만을 표현</p>
+
+            <h3>Element만 탐색하는 방법</h3>
+            <br />
+            <p>
+              1. 자식 요소만 모두 선택<br />
+              &nbsp;&nbsp; .children <br />
+              <br />
+
+              2. 부모 요소 선택<br />
+              &nbsp;&nbsp; .parentElement <br />
+              <br />
+
+              3. 첫 번째 자식 요소 선택<br />
+              &nbsp;&nbsp; .firstElementChild<br />
+              <br />
+
+              4. 마지막 자식 요소 선택<br />
+              &nbsp;&nbsp; .lastElementChild<br />
+              <br />
+
+              5. 이전 형제 요소 선택<br />
+              &nbsp;&nbsp; .previousElementSibling<br />
+              <br />
+
+              6. 다음 형제 요소 선택<br />
+              &nbsp;&nbsp; .nextElementSibling
+            </p>
+            <br />
+
+            <h2>innerHTML & createElement</h2>
+            <br />
+
+            <h3>innerHTML</h3>
+            <p></p>
+            <br />
+
+            <h3>createElement</h3>
+            <p></p>
+            <br />
+
+            <h3>innerHTML과 createElement 차이점</h3>
+            <p></p>
+            <br />
+
+            <h2>4. 요소 추가 제거</h2>
+            <br />
+
+            <h3>1. 추가 제거 관련 함수</h3>
+            <br />
+            <p>
+              1. 요소 추가<br />
+              &nbsp;&nbsp; 요소.add()<br />
+              <br />
+
+              2. 요소 제거<br />
+              &nbsp;&nbsp; 요소.remove()<br />
+              <br />
+
+              3. 요소에 class 추가<br />
+              &nbsp;&nbsp; 요소.classList.add("class명")<br />
+              <br />
+
+              4. 해당 요소에 적용된 class 제거<br />
+              &nbsp;&nbsp; 요소.classList.remove("class명");<br />
+              <br />
+
+              5. 요소에 속성 / 속성 값 추가<br />
+              &nbsp;&nbsp; 요소.setAttribute("속성", "속성 값")
+            </p>
+            <br />
+
+            <h3>2. 추가 제거 Example</h3>
+            <br />
+            <pre>
+                  // 추가 버튼(#add)가 클릭 되었을 때
+                  document.getElementById("add").addEventListener("click", function(){
+
+                  // div 요소 생성
+                  const div = document.createElement("div");
+                  
+                  // div에 row 클래스 추가
+                  div.classList.add("row");
+                  
+                  // --------------------------------------------------
+                  
+                  // input 요소 생성
+                  const input = document.createElement("input");
+                  
+                  // input에 in 클래스 추가
+                  input.classList.add("in");
+                  
+                  // input에 "type" 속성, "number" 속성값 추가 (type="number")
+                  
+                  // - 요소.setAttribute("속성", "속성값") : 요소에 속성/속성값 추가
+                  input.setAttribute("type", "number");
+                  
+                  // -------------------------------------------------
+                  
+                  // span 요소 생성
+                  const span = document.createElement("span");
+                  
+                  // span에 remove 클래스 추가
+                  span.classList.add("remove");
+                  
+                  // span의 내용으로 "X" 추가
+                  span.innerText = "X";
+                  
+                  // span이 클릭 되었을 때에 대한 이벤트 동작 추가
+                  span.addEventListener("click", function(){
+                  
+                      // 요소.parentElement : 부모요소
+                      // 요소.remove() : 요소 제거
+                  
+                      // 부모(.row) 제거
+                      span.parentElement.remove();
+                  
+                  })
+                  
+                  
+                  // ----------------------------------------------------
+                  
+                  
+                  // div 내부에(자식으로) input, span 순서대로 추가
+                  div.append(input);
+                  div.append(span);
+                  
+                  // #container에 div를 마지막 자식으로 추가
+                  document.getElementById("container").append(div);
+
+              });
+            </pre>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-2 sidebar_right">
+          <ul class="nav nav-sidebar">
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="viewPage_footer">
+      <div class="ft_wrap">
+        <div class="footer_first">
+          <a href="">이용약관</a>
+          <span>|</span>
+          <a href=""><strong>개인정보처리방침</strong></a>
+          <span>|</span>
+          <a href="">제휴신청</a>
+          <span>|</span>
+          <a href="">개발자포럼</a>
+          <span>|</span>
+          <a href="">개발자채용</a>
+        </div>
+        <div class="footer_second">
+          <div><a href="http://www.naver.com">NAVER</a></div>
+          <span>
+            Copyright ©
+            <a href="http://www.naver.com"><strong>NAVER Corp.</strong></a>
+            All Rights Reserved.
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

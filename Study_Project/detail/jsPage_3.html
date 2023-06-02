@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/64a5181ca4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/jquery-3.6.2.min.js"></script>
+    <script type="text/javascript" src="../js/subList.js"></script>
+
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../dist/css/dashboard.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/subList.css" />
+    <style>
+      .container {
+        width: 1300px;
+      }
+      .top_nav_margin {
+        margin-left: 120px;
+      }
+      .sidebar_right {
+        position: fixed;
+        top: 100px;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      .sidebar_right > ul > li > a {
+        border-left: 2px solid #cdcdcd;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav top_nav_margin navbar-nav">
+            <li id="ml1"><a href="#">Ours</a></li>
+            <li id="ml2"><a href="#Front-End">Front-End</a></li>
+            <li id="ml3"><a href="#Back-End">Back-End</a></li>
+            <li id="ml4"><a href="#Coding-Test">Coding-Test</a></li>
+            <li id="ml5"><a href="#Service">Service</a></li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                >Dropdown <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <form class="navbar-form navbar-right">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search..."
+                />
+              </form>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                ><i class="fa-regular fa-user"></i
+              ></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Log-In</a></li>
+                <li><a href="#">Sign-In</a></li>
+                <li><a href="#">Log-Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- 하위 메뉴 -->
+    <div>
+      <div id="sub_menu1" class="sub_list">
+        <ul class="nav">
+          <li><a href="#">사이트소개</a></li>
+          <li><a href="#">관리자소개</a></li>
+          <li><a href="#">히스토리</a></li>
+        </ul>
+      </div>
+      <div id="sub_menu2" class="sub_list">
+        <ul class="nav">
+          <li><a href="">HTML5</a></li>
+          <li><a href="">CSS3</a></li>
+          <li><a href="">JavaScript</a></li>
+          <li><a href="">jQuery</a></li>
+          <li><a href="">JSP</a></li>
+          <li><a href="">AJAX</a></li>
+        </ul>
+      </div>
+      <div id="sub_menu3" class="sub_list">
+        <ul class="nav">
+          <li><a href="">Java</a></li>
+          <li><a href="">DataBase</a></li>
+          <li><a href="">미정(모델링)</a></li>
+          <li><a href="">Spring</a></li>
+        </ul>
+      </div>
+      <div id="sub_menu4" class="sub_list">
+        <ul class="nav">
+          <li><a href="">Coding-Test</a></li>
+          <li><a href="">미정(사용방법)</a></li>
+        </ul>
+      </div>
+      <div id="sub_menu5" class="sub_list">
+        <ul class="nav">
+          <li><a href="">커뮤니티</a></li>
+          <li><a href="">공지사항</a></li>
+          <li><a href="">시험일정</a></li>
+          <li><a href="">문의하기</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 본문 -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <h3>JavaScript</h3>
+          <ul class="nav nav-sidebar">
+            <li><a href="#">JS란</a></li>
+            <li><a href="#">JS 요소</a></li>
+            <li><a href="#">JS 이벤트</a></li>
+            <li class="active"><a href="">내장객체 및 관련함수</a></li>
+            <li><a href="">객체</a></li>
+            <li><a href="">DOM</a></li>
+            <li><a href="">JS 함수</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 main">
+          <h1 class="page-header">내장객체 및 관련함수</h1>
+          <div>
+            <br />
+            <h2>표준 객체(Standard Object) 개요</h2>
+            <p>자바스크립트 언어가 실행되는 어디서나 사용 가능한 객체</p>
+            <br />
+
+            <h3>1. 문자열(String) 객체</h3>
+            <br />
+            <p>
+              JS에서 문자열은 보통 리터럴 표기법을 사용하여 표현 문자열을 조작할
+              수 있는 기능 제공
+            </p>
+            <br />
+
+            <h3>2. 문자열(String) 관련 method</h3>
+            <br />
+            <p>
+              1. indexOf(str)<br />
+              &nbsp;&nbsp; 인자로 전달받은 문자열(str)이 처음으로 등장하는 위치
+              반환<br />
+              <br />
+
+              2. lastIndexOf(str)<br />
+              &nbsp;&nbsp; 인자로 전달받은 문자열(str)이 마지막으로 등장하는
+              위치 반환<br />
+              <br />
+
+              3. charAt(인덱스)<br />
+              &nbsp;&nbsp; 전달받은 인덱스에 위치한 문자 반환<br />
+              <br />
+
+              4-1. slice(시작 인덱스, 종료 인덱스)<br />
+              <br />
+
+              4-2. substring(시작 인덱스, 종료 인덱스)<br />
+              <br />
+
+              4-3. substr(시작 인덱스, 종료 인덱스)<br />
+              &nbsp;&nbsp; 전달받은 시작 인덱스부터 종료 인덱스 바로 앞까지
+              문자열을 추출하여 새로운 문자열 반환<br />
+              <br />
+
+              5. split("구분자")<br />
+              &nbsp;&nbsp; 전달받은 구분자를 기준으로 나눈 후, 나뉘어진 문자열을
+              하나의 배열로 반환<br />
+              <br />
+
+              6. concat(str)<br />
+              &nbsp;&nbsp; 전달받은 문자열을 결합한 새로운 문자열 반환<br />
+              <br />
+
+              7. toUppterCase()<br />
+              &nbsp;&nbsp; 모든 문자를 대문자로 변환한 새로운 문자열 반환<br />
+              <br />
+
+              8. toLowerCase()<br />
+              &nbsp;&nbsp; 모든 문자를 소문자로 변환한 새로운 문자열 반환<br />
+              <br />
+
+              9. trim()<br />
+              &nbsp;&nbsp; 양 끝에 존재하는 모든 공백과 줄 바꿈 문자를 제거한
+              새로운 문자열 반환
+            </p>
+            <br />
+
+            <h3>3. 숫자(Number) 객체</h3>
+            <p>JS에서 숫자는 보통 숫자 리터럴을 사용하여 표현</p>
+            <br />
+
+            <h3>4. 숫자(Number) 리터럴 표기법</h3>
+            <br />
+            <p>
+              1. 정수 <br />
+              <br />
+              2. 실수 <br />
+              <br />
+              3. Infinity(무한) <br />
+              &nbsp;&nbsp; 양/음의 무한대
+              <br />
+              4. Nan(Not A Number) <br />
+              &nbsp;&nbsp; 숫자가 아니라는 의미, 정의되지 않은 값이나 표현할 수
+              없는 값
+            </p>
+            <br />
+
+            <h3>숫자(Number) 관련 method</h3>
+            <br />
+            <p>
+              1. Number.parseFloat("문자열")<br />
+              &nbsp;&nbsp; 문자열에 포함된 숫자 부분을 실수 형태로 반환<br />
+              <br />
+
+              2. Number.parseInt("문자열")<br />
+              &nbsp;&nbsp; 문자열에 포함된 숫자를 정수 형태로 반환<br />
+              <br />
+
+              3. Number.isNaN()<br />
+              &nbsp;&nbsp; 전달된 값이 NaN인지 아닌지 검사 [return :
+              True/False].<br />
+              <br />
+
+              4. Number("문자열")<br />
+              &nbsp;&nbsp; 문자열에 포함된 숫자 부분을 정수면 정수 형태로,
+              실수면 실수 형태로 반환
+            </p>
+            <br />
+
+            <h3>수학(Math) 객체</h3>
+            <p>
+              수학에서 자주 사용하는 상수와 함수들을 미리 구현해 놓은 JS 표준
+              내장 객체
+            </p>
+            <br />
+
+            <h3>수학(Math) 관련 method</h3>
+            <br />
+            <p>
+              1. Math.min(num1, num2, num3, ...)<br />
+              &nbsp;&nbsp; 인수로 전달받은 값 중에서 가장 작은 수 반환<br />
+              <br />
+
+              2. Math.max(num1, num2, num3, ...)<br />
+              &nbsp;&nbsp; 인수로 전달받은 값 중에서 가장 큰 수 반환<br />
+              <br />
+
+              3. Math.random()<br />
+              &nbsp;&nbsp; 0보다 크거나 같고 1보다 작은 무작위 숫자 반환<br />
+              <br />
+
+              4. Math.floor(num)<br />
+              &nbsp;&nbsp; 인수로 전달받은 값과 같거나 작은 수 중에서 가장 큰
+              정수 반환<br />
+              <br />
+
+              5. Math.ceil(num)<br />
+              &nbsp;&nbsp; 인수로 전달받은 값과 같거나 큰 수 중에서 가장 작은
+              정수 반환<br />
+              <br />
+
+              6. Math.trunc(num)<br />
+              &nbsp;&nbsp; 인수로 전달받은 값의 모든 소수 부분을 삭제하고 정수
+              부분만 반환
+            </p>
+            <br />
+
+            <h3>날짜(Date) 객체</h3>
+            <p>
+              시간과 날짜 정보를 담고 있는 객체로 시스템의 현재 날짜, 시간을
+              조회 및 설정하기 위한 기능 제공
+            </p>
+            <br />
+
+            <h3>날짜 표현</h3>
+            <br />
+            <p>
+              1. 연도(year)<br />
+              &nbsp;&nbsp; 1900년(00) ~ 1999년(99)<br />
+              <br />
+
+              2. 월(month)<br />
+              &nbsp;&nbsp; 1월(0) ~ 12월(11)<br />
+              <br />
+
+              3. 일(day)<br />
+              &nbsp;&nbsp; 1일(1) ~ 31일(31)<br />
+              <br />
+
+              4. 시(hours)<br />
+              &nbsp;&nbsp; 0시(0) ~ 23시(23)<br />
+              <br />
+
+              5. 분(minutes)<br />
+              &nbsp;&nbsp; 0분(0) ~ 59분(59)<br />
+              <br />
+
+              6. 초(seconds)<br />
+              &nbsp;&nbsp; 0초(0) ~ 59초(59)
+            </p>
+            <br />
+
+            <h3>8-2. 날짜 객체 초기화</h3>
+            <br />
+            <p>
+              1. new Date()<br />
+              <br />
+
+              2. new Date("날짜를 나타내는 문자열")<br />
+              <br />
+
+              3. new Date(ms)<br />
+              <br />
+
+              4. new Date(년, 월, 일, 시, 분, 초, ms)
+            </p>
+            <br />
+
+            <h3>9. 날짜(Date) 객체 method</h3>
+            <br />
+            <p>
+              1. Date.now()<br />
+              &nbsp;&nbsp; 1970년 1월 1일 0시 0분 0초부터 현재까지 시간을 ms
+              단위의 정수로 반환<br />
+              <br />
+
+              2. Date().getFullYear()<br />
+              &nbsp;&nbsp; 현재 년도를 4비트의 숫자(YYYY)로 반환<br />
+              <br />
+
+              3. Date().setFullYear()<br />
+              &nbsp;&nbsp; Date 객체의 값을 특정 날짜로 설정<br />
+              <br />
+
+              4. Date().getDay()<br />
+              &nbsp;&nbsp; 현재 요일에 해당하는 숫자 반환( 일(0)~월(6) )<br />
+              <br />
+
+              5. Date().getDate()<br />
+              &nbsp;&nbsp; 현재 날짜에 해당하는 숫자 반환<br />
+              <br />
+
+              6. Date().getDate()<br />
+              &nbsp;&nbsp; 1970년 1월 1일 0시 0분 0초부터 현재까지 시간을 ms
+              단위로 환산한 값 숫자로 반환<br />
+              <br />
+
+              7. Date().setDate() <br />
+              &nbsp;&nbsp; Date 객체의 일자 값을 특정 일자로 설정
+            </p>
+            <br />
+
+            <h3>배열(Array) 객체</h3>
+            <p>같은 종류의 변수를 하나로 묶기 위한 배열에 관련된 기능 제공</p>
+            <br />
+
+            <h3>배열(Array) 객체 method</h3>
+            <br />
+            <p>
+              1. Array.isArray()<br />
+              &nbsp;&nbsp; 전달받은 값이 Array 객체인지 아닌지 검사<br />
+              <br />
+
+              2. Array.from() <br />
+              &nbsp;&nbsp; 배열과 비슷한 객체나 반복할 수 있는 객체를 배열처럼
+              변환 <br />
+              <br />
+
+              3. Array.of() <br />
+              &nbsp;&nbsp; 인수의 수나 타입에 상관없이 인수로 전달받은 값을
+              가지고 새로운 Array 객체 생성
+            </p>
+            <br />
+
+            <h2>배열의 특징</h2>
+            <p>자료형과 같이 길이에 제한 없음</p>
+            <br />
+
+            <h3>1. 배열 선언 방법</h3>
+            <br />
+            <p>
+              1. arr = [배열요소1, 배열요소2, ...]<br />
+              <br />
+
+              2. arr = Array[배열요소1, 배열요소2, ...]<br />
+              <br />
+
+              3. arr = new Array()<br />
+              <br />
+
+              4. arr = [];
+            </p>
+            <br />
+
+            <h3>2. 배열 요소 추가 방법</h3>
+            <br />
+            <p>
+              1. arr.push(추가할 요소)<br />
+              <br />
+
+              2. arr[arr.length] = 추가할 요소<br />
+              <br />
+
+              3. arr[특정 인덱스] = 추가할 요소
+            </p>
+
+            <h3>3. 배열 요소 접근 방법</h3>
+            <br />
+            <p>
+              1. 일반 for문<br />
+              &nbsp;&nbsp; 인덱스로 접근<br />
+              <br />
+
+              2. 향상된 for문<br />
+              &nbsp;&nbsp; 배열 요소에 바로 접근
+            </p>
+            <br />
+
+            <h3>4. 배열 method</h3>
+            <br />
+            <p>
+              1. arr.indexOf("값") <br />
+              &nbsp;&nbsp; 일치하는 값을 가진 요소의 인덱스 반환<br />
+              <br />
+
+              2. arr.sort([정렬 기준 함수])<br />
+              &nbsp;&nbsp; 배열 내 문자열 요소를 오름차순으로 정렬<br />
+              <br />
+
+              3. arr.toString()<br />
+              &nbsp;&nbsp; 배열 요소를 하나의 문자열로 출력<br />
+              <br />
+
+              4. arr.join("구분자")<br />
+              &nbsp;&nbsp; 배열 요소 사이에 구분자를 추가하여 배열을 하나의
+              문자열로 반환
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-2 sidebar_right">
+          <ul class="nav nav-sidebar">
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="viewPage_footer">
+      <div class="ft_wrap">
+        <div class="footer_first">
+          <a href="">이용약관</a>
+          <span>|</span>
+          <a href=""><strong>개인정보처리방침</strong></a>
+          <span>|</span>
+          <a href="">제휴신청</a>
+          <span>|</span>
+          <a href="">개발자포럼</a>
+          <span>|</span>
+          <a href="">개발자채용</a>
+        </div>
+        <div class="footer_second">
+          <div><a href="http://www.naver.com">NAVER</a></div>
+          <span>
+            Copyright ©
+            <a href="http://www.naver.com"><strong>NAVER Corp.</strong></a>
+            All Rights Reserved.
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

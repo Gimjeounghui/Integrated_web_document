@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/64a5181ca4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/jquery-3.6.2.min.js"></script>
+    <script type="text/javascript" src="../js/subList.js"></script>
+
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../dist/css/dashboard.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/subList.css" />
+    <style>
+      .container {
+        width: 1300px;
+      }
+      .top_nav_margin {
+        margin-left: 120px;
+      }
+      .sidebar_right {
+        position: fixed;
+        top: 100px;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      .sidebar_right > ul > li > a {
+        border-left: 2px solid #cdcdcd;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav top_nav_margin navbar-nav">
+            <li id="ml1"><a href="#">Ours</a></li>
+            <li id="ml2"><a href="#Front-End">Front-End</a></li>
+            <li id="ml3"><a href="#Back-End">Back-End</a></li>
+            <li id="ml4"><a href="#Coding-Test">Coding-Test</a></li>
+            <li id="ml5"><a href="#Service">Service</a></li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                >Dropdown <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <form class="navbar-form navbar-right">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search..."
+                />
+              </form>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                ><i class="fa-regular fa-user"></i
+              ></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Log-In</a></li>
+                <li><a href="#">Sign-In</a></li>
+                <li><a href="#">Log-Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- 하위 메뉴 -->
+    <div>
+      <div id="sub_menu1" class="sub_list">
+        <ul class="nav">
+          <li><a href="#">사이트소개</a></li>
+          <li><a href="#">관리자소개</a></li>
+          <li><a href="#">히스토리</a></li>
+        </ul>
+      </div>
+      <div id="sub_menu2" class="sub_list">
+        <ul class="nav">
+          <li><a href="">HTML5</a></li>
+          <li><a href="">CSS3</a></li>
+          <li><a href="">JavaScript</a></li>
+          <li><a href="">jQuery</a></li>
+          <li><a href="">JSP</a></li>
+          <li><a href="">AJAX</a></li>
+        </ul>
+      </div>
+      <div id="sub_menu3" class="sub_list">
+        <ul class="nav">
+          <li><a href="">Java</a></li>
+          <li><a href="">DataBase</a></li>
+          <li><a href="">미정(모델링)</a></li>
+          <li><a href="">Spring</a></li>
+        </ul>
+      </div>
+      <div id="sub_menu4" class="sub_list">
+        <ul class="nav">
+          <li><a href="">Coding-Test</a></li>
+          <li><a href="">미정(사용방법)</a></li>
+        </ul>
+      </div>
+      <div id="sub_menu5" class="sub_list">
+        <ul class="nav">
+          <li><a href="">커뮤니티</a></li>
+          <li><a href="">공지사항</a></li>
+          <li><a href="">시험일정</a></li>
+          <li><a href="">문의하기</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 본문 -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <h3>JavaScript</h3>
+          <ul class="nav nav-sidebar">
+            <li><a href="#">JS란</a></li>
+            <li><a href="#">JS 요소</a></li>
+            <li><a href="#">JS 이벤트</a></li>
+            <li><a href="">내장객체 및 관련함수</a></li>
+            <li class="active"><a href="">객체</a></li>
+            <li><a href="">DOM</a></li>
+            <li><a href="">JS 함수</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 main">
+          <h1 class="page-header">Window 객체</h1>
+          <div>
+            <p>웹 브라우저를 나타내는 객체(Window, JS의 모든 객체, 전역 함수, 전역 변수)</p>
+            <br>
+
+            <h2>1. window 객체 종류</h2>
+            <br>
+            <br>
+
+            <h3>BOM(Brower Object Model)</h3>
+            <p>브라우저의 정보에 접근하거나 브라우저의 여러 기능을 제어할 때 사용하는 객체 모델</p>
+            <br>
+            <p>
+                1. Window<br>
+                &nbsp;&nbsp; 브라우저 창에 대한 모든 상황을 제어하는 최상위 객체<br>
+                <br>
+
+                2. Location<br>
+                &nbsp;&nbsp; url 정보를 제어하는 객체<br>
+                <br>
+
+                3. History<br>
+                &nbsp;&nbsp; 웹 브라우저에 기록되어 있는 history 정보 제어<br>
+                <br>
+
+                4. Navigator<br>
+                &nbsp;&nbsp; 브라우저의 종류 판별<br>
+                <br>
+
+                5. Screen<br>
+                &nbsp;&nbsp; 브라우저 화면에 대한 정보를 알려줌
+            </p>
+            <br>
+
+            <h3>DOM(Document Object Model)</h3>
+            <br>
+            <p>
+                1. Document<br>
+                &nbsp;&nbsp; 문서에 대한 정보, HTML 문서의 각 요소들을 제어하기 위한 기능<br>
+                <br>
+
+                2. Image<br>
+                &nbsp;&nbsp; &lt; img &gt; 태그에 대한 속성 제어<br>
+                <br>
+
+                3. Form<br>
+                &nbsp;&nbsp; 입력 양식에 대한 제어
+            </p>
+            <br>
+
+            <h2>2. window 객체 관련 함수</h2>
+            <br>
+            <p>
+                <strong>window.setTimeout(함수, 지연시간(ms))</strong><br>
+                지연 시간이 흐른 후에 함수 1회 실행<br>
+                <br>
+
+                <strong>window.setInterval(함수, 지연 시간(ms))</strong><br>
+                지연 시간마다 함수 실행<br>
+                <br>
+
+                <strong>window.clearInterval(setInterval이 지정된 변수)</strong><br>
+                지정된 변수를 멈춤<br>
+                <br>
+
+                <strong>document.body.clientHeight</strong><br>
+                브라우저의 창 높이 설정<br>
+                <br>
+
+                <strong>document.body.clientWidth</strong>
+                브라우저의 창 넓이 설정
+            </p>
+            <br>
+
+            <h1>JS 객체 Object</h1>
+            <p>Key와 Value로 구성된 Property의 정렬되지 않은 집합</p>
+            <br>
+
+            <h2>1. 객체 생성 방법</h2>
+            <br>
+            <p>
+                1. {} 객체 리터럴 표기법을 이용한 생성<br>
+                &nbsp;&nbsp; new obj = {name1:value1, name2:value2, name3:value3, ...}<br>
+                <br>
+
+                2. 생성자 +new 생성자()를 이용한 생성<br>
+                <br>
+
+                3. Object.create() 메소드를 이용한 생성<br>
+                <br>
+
+                4. ES6 클래스를 이용한 생성<br>
+                <pre>
+                    Class User {
+                        constructor(name, hobby) {
+                            this.name = name;
+                            this.hobby = hobby;
+                        }
+
+                        greeting() {
+                            Console.log("안녕하세요~! 나는 " + this.name + "입니다.");
+                        }
+                    }
+
+                    let user = new User("홍길동", ["여행", "영화"]);
+                    user.greeting();
+                </pre>
+            </p>
+            <br />
+
+            <h2>2. 객체 value값 확인하기</h2>
+            <br>
+            <p>
+                1. 반복문(for ~ in)<br>
+                <pre>
+                    for ( let item in obj ) {
+                        item;  //객체이름
+                        obj[item]; //객체 값(value)
+                    }
+                </pre>
+                <br>
+
+                2. Object.keys()<br>
+                <br>
+
+                3. Object.getOwnPropertyName()
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-2 sidebar_right">
+          <ul class="nav nav-sidebar">
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="viewPage_footer">
+      <div class="ft_wrap">
+        <div class="footer_first">
+          <a href="">이용약관</a>
+          <span>|</span>
+          <a href=""><strong>개인정보처리방침</strong></a>
+          <span>|</span>
+          <a href="">제휴신청</a>
+          <span>|</span>
+          <a href="">개발자포럼</a>
+          <span>|</span>
+          <a href="">개발자채용</a>
+        </div>
+        <div class="footer_second">
+          <div><a href="http://www.naver.com">NAVER</a></div>
+          <span>
+            Copyright ©
+            <a href="http://www.naver.com"><strong>NAVER Corp.</strong></a>
+            All Rights Reserved.
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

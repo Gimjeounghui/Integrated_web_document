@@ -1,0 +1,147 @@
+/* 기본 틀 */
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+header {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.top {
+    width: 1300px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+.top > ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 650px;
+    padding: 0;
+}
+
+li.main_list {
+    padding: 20px 30px 30px;
+    margin: 10px 0 0 0;
+}
+
+.category {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchbox {
+    border: 1px solid #000;
+    border-radius: 15px;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.searchbox > input {
+    width: 160px;
+    margin-left: 5px;
+    border: 0px;
+}
+
+.searchbox > a {
+    margin: 5px;
+}
+
+.icon {
+    font-size: 25px;
+}
+
+
+
+/* *************************************************** */
+/* main_list under-line 추가 */
+#horizontal-underline{
+    position: absolute;
+    left:0;
+    height: 3px;
+    width: 0;
+    border-radius: 3px;
+    transition: 0.5s;
+    background-color: #4ab56a;
+    z-index: 2;
+}
+
+.top > ul > li > a:hover {
+    color: #4ab56a;
+}
+
+.sub_list_flex > ul > li > a:hover {
+    color: #4ab56a;
+}
+
+/* *************************************************** */
+/* 하위 메뉴 */
+
+.sub_list {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #d6d6d6;
+    z-index: 1;
+}
+
+.sub_list > ul {
+    display: flex;
+    width: 500px;
+    padding: 10px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+#sub_menu2 > ul { width: 700px; }
+
+#sub_menu4 > ul { width: 350px; }
+
+.sub_list > ul > li {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/* ***************************************************** */
+
+footer {
+    display: block;
+    height: 90px;
+    margin: 20px auto;
+    text-align: center;
+    width: 1300px;
+}
+
+.btn_f { color: #444; font-size: 13px; }
+.btn_f > a { color: #444; font-size: 13px; }
+.btn_f > a > strong { font-weight: bold; }
+
+
+.line_f { color: #d7d7d7; height: 11px; padding: 0px 3px; width: 1px; }
+
+.f_naver { font-family: Arial, avenir, av55, Helvetica, san-serif; font-size: 10px; 
+    margin: 10px auto; align-items: center; text-align: center; display: flex; justify-content: center;
+} 
+.f_naver > div { margin: 0 5px; font-size: 14px; font-weight: bold;}
+.f_naver > div > a { color: #000; font-family: 'Roboto', sans-serif;}

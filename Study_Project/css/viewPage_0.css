@@ -1,0 +1,86 @@
+.menuWrap {
+	background-color: #ffffff;
+	width: 490px;
+	border-radius: 20px;
+	padding: 0;
+	margin: 35px auto;
+	box-sizing: border-box;
+}
+
+.formTab > input[type="text"], input[type="password"] {
+	width: 400px;
+	height: 40px;
+	border: 1px solid #d2d2d2;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+
+.formTab input[type="checkbox"] {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #868686;
+}
+
+.formTab > p {
+	font-weight: 600;
+	font-size: small;
+}
+
+.formTab > label {
+	color: #868686;
+	font-size: small;
+}
+
+.section_submit a {
+	color: black;
+}
+
+.submitBtn {
+	width: 400px;
+	height: 40px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.section_submit {
+	width: 100%;
+	height: 850px;
+	margin: 0px auto;
+	padding: 20px;
+    background-color: #C2D6F2;
+}
+
+.tabMenu {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	background: #f4f4f4;
+	border-radius: 20px;
+}
+
+.tabMenu>a {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 10px 0;
+	border-radius: 20px 20px 0 0;
+	background: #f4f4f4;
+}
+
+.tabMenu>a>span {
+	padding: 10px 50px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.tabMenu>a:first-child {
+	background: white;
+}
+
+.formBox {
+	padding: 20px 40px;
+}
+
+#signUpMenu {
+	display: none;
+}

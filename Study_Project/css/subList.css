@@ -1,0 +1,30 @@
+/* 하위 메뉴 */
+
+.sub_list {
+    display: none;
+    position: fixed;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-top: 1px solid #d6d6d6;
+    z-index: 1;
+}
+
+.sub_list > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.sub_list > ul > li > a {
+    color: #777;
+    padding: 15px;
+}
+/* #sub_menu2 > ul { width: 700px; }
+
+#sub_menu4 > ul { width: 350px; }
+
+.sub_list > ul > li {
+    padding: 10px;
+    margin: 10px;
+} */
